@@ -12,6 +12,6 @@
   "framework": "nuxt",
   "aliases": {
     "components": "@shared",
-    "utils": "@shared/lib/utils"
+    "utils": "@/src/shared/lib"
   }
 }

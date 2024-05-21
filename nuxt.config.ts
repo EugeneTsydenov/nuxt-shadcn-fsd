@@ -1,12 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { fileURLToPath } from 'url'
-import { dirname, join } from 'path'
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-const currentDir = dirname(fileURLToPath(import.meta.url))
+const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -25,10 +25,10 @@ export default defineNuxtConfig({
     layouts: './src/app/layouts',
     assets: './src/app/assets',
     middleware: './src/app/middleware',
-    public: './src/app/public'
+    public: './src/app/public',
   },
   imports: {
-    autoImport: false
+    autoImport: false,
   },
   alias: {
     '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -38,5 +38,5 @@ export default defineNuxtConfig({
     '@features': fileURLToPath(new URL('./src/features', import.meta.url)),
     '@entities': fileURLToPath(new URL('./src/entities', import.meta.url)),
     '@shared': fileURLToPath(new URL('./src/shared', import.meta.url)),
-  }
-})
+  },
+});
