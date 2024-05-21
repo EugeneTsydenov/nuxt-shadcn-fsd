@@ -27,8 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "~/src/shared/ui/card";
-import {Button} from "~/src/shared/ui/button";
+import {Button} from "@shared/ui/button";
+import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@shared/ui/card";
 </script>
 
 <style scoped>
