@@ -11,8 +11,8 @@
       <form>
         <div class="grid items-center w-full gap-4">
           <div class="flex flex-col space-y-1.5">
-            <Label for="name">Name</Label>
-            <Input id="name" placeholder="Name of your project" />
+            <label for="name">Name</label>
+            <input id="name" placeholder="Name of your project" />
           </div>
         </div>
       </form>
@@ -27,8 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import {Button} from "@shared/ui/button";
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@shared/ui/card";
+import {Button} from "@shared/ui";
+import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@shared/ui";
 </script>
 
 <style scoped>
